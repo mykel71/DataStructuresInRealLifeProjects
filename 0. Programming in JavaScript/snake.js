@@ -32,7 +32,7 @@ function update(){
     }
 }
 function gameloop(){
-    var f = setInterval(gameloop,100);
+    
     if(game_over==true){
         clearInterval(f);
     }
@@ -41,3 +41,4 @@ function gameloop(){
 }
 
 init();
+var f = setInterval(gameloop,100);
