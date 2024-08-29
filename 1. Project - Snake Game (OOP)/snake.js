@@ -20,7 +20,7 @@ function init(){
 
 
     snake = {
-        init_len:5,
+        init_len:3,
         color:"blue",
         cells:[],
         direction:"right",
