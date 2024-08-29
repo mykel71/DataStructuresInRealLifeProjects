@@ -1,7 +1,7 @@
 
 function init(){
     console.log("In Init");
-    canvas = document.getElementById("mycanvas");
+   // canvas = document.getElementById("mycanvas");
     W = canvas.width = 500;
     H = canvas.height = 500;
     // canvas is used to draw graphics
