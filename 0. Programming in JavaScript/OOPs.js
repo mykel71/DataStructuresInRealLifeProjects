@@ -31,10 +31,24 @@ class Fruit{
     }
 };
 
+
+
+// Class Expression
+let FruitClass2 = class{
+    constructor(taste,color){
+        this.color = color;
+        this.taste = taste;
+    }
+};
+
+
+// Functions - Declaration, Function Expression
+// Functions - Declaration, Function Expression
+
 let kiwi = new Fruit("sour","green");
+let kiwi2 = new Fruit("sour","green");
 
 
-/*
 var bird = {
     x:100,
     y:20,
@@ -43,9 +57,14 @@ var bird = {
 
     fly:function(){
         console.log("Bird is Flying",this.x, this.y);
+    },
+    addEgg:function(eggName){
+        this.eggs.push(eggName);
     }
 };
 
+
+/*
 // For Loop
 for (let i = 0; i<bird.eggs.length;i++){
     console.log(bird.eggs[i]);
@@ -56,3 +75,6 @@ bird.eggs.forEach(function(val,idx){
     console.log(val,idx);
 });
 */
+
+var canvas = document.getElementById('mycanvas')
+console.log(canvas)
