@@ -54,7 +54,7 @@ function Init(){
         w : 60,
         h : 60,
         speed : 20,
-    //    moving : "false",
+        moving : false,
     };
     gem = {
         x : W-100,
@@ -62,6 +62,16 @@ function Init(){
         w : 60,
         h : 60,
     };
+
+    // Event Listener on the canvas
+    canvas.addEventListener('mousedown',function(){
+        console.log("Mouse Pressed");
+        player.moving = true;
+    });
+    canvas.addEventListener('mouseup',function(){
+        console.log("Mouse Released");
+        player.moving = false;
+    });
 
 }
 
@@ -90,6 +100,12 @@ function Draw(){
 }
 
 function Update(){
+
+    // If the player is moving
+    if(player.moving == true){
+        player.x += player.speed;
+    }
+
     // movement to the box
     // update each enemy by the same logic
     for(let i = 0; i<enemy.length; i++){
